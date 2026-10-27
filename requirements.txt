@@ -1,0 +1,11 @@
+# Ambiente de referencia: Google Colab (Python 3). Versoes minimas usadas.
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.4
+xgboost>=2.0
+scipy>=1.11
+shap>=0.45
+matplotlib>=3.8
+pyarrow>=14.0
+requests>=2.31
+rapidfuzz>=3.0

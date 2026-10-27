@@ -1,0 +1,8 @@
+# Dados brutos e intermediarios nao sao versionados (ver data/README.md)
+data/*.csv
+data/*.duckdb
+*.parquet
+checkpoints*/
+caRtola/
+__pycache__/
+.ipynb_checkpoints/
