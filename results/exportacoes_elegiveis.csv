@@ -1,0 +1,111 @@
+player_id,player_name,transfer_date,temporada_ref,from_club_name,to_club_name,transfer_fee,market_value_in_eur,idade_na_venda,causa
+1500420,Bruninho,2026-08-16,2025.0,Athletico-PR,Shakhtar D.,11000000.0,7000000.0,17.998631074606433,2b nao registrado no BRA1 pelo Transfermarkt no ano
+1275068,Kauã Prates,2026-08-12,2025.0,Cruzeiro,Dortmund,7000000.0,10000000.0,17.998631074606433,0 avaliada
+1275071,Cauan Baptistella,2026-02-10,2025.0,Cruzeiro,Metalist 1925,1500000.0,,18.28336755646817,2b nao registrado no BRA1 pelo Transfermarkt no ano
+877787,Ryan Guilherme,2026-02-01,2025.0,Cruzeiro,Rio Ave,2500000.0,700000.0,23.15400410677618,0 avaliada
+964582,Jhon Jhon,2026-01-28,2025.0,RB Bragantino,Zenit S-Pb,18000000.0,11000000.0,23.38672142368241,0 avaliada
+1012564,Rayan,2026-01-27,2025.0,Vasco da Gama,Bournemouth,28500000.0,25000000.0,19.485284052019164,0 avaliada
+1086258,Souza,2026-01-22,2025.0,Santos,Tottenham,15000000.0,5000000.0,19.603011635865844,0 avaliada
+985172,David Ricardo,2026-01-21,2025.0,Botafogo,Dynamo Moscow,6000000.0,7000000.0,23.085557837097877,0 avaliada
+1116387,Guilherme Luiz,2026-01-02,2025.0,Ceará SC,Göztepe,1400000.0,350000.0,20.689938398357288,4 nome sem correspondencia no Cartola
+1005583,Alysson,2026-01-01,2025.0,Grêmio,Aston Villa,10000000.0,8000000.0,19.66050650239562,0 avaliada
+1009031,Henrique Carmo,2025-09-11,2024.0,São Paulo,CSKA Moscow,5100000.0,1000000.0,18.83915126625599,4 nome sem correspondencia no Cartola
+703324,Figueiredo,2025-09-01,2024.0,Vasco da Gama,Alverca,750000.0,1400000.0,24.04928131416838,2a menos de 3 jogos no Cartola
+891353,Cuiabano,2025-09-01,2024.0,Botafogo,Nott'm Forest,6000000.0,8000000.0,22.54072553045859,0 avaliada
+1082582,Gustavo Mancha,2025-09-01,2024.0,Fortaleza,Olympiacos,4500000.0,700000.0,21.10335386721424,2b nao registrado no BRA1 pelo Transfermarkt no ano
+432914,John Victor,2025-08-31,2024.0,Botafogo,Nott'm Forest,8000000.0,8000000.0,29.54688569472964,4 nome sem correspondencia no Cartola
+1219752,Isaque,2025-08-28,2024.0,Fluminense,Shakhtar D.,10000000.0,1000000.0,18.507871321013006,2b nao registrado no BRA1 pelo Transfermarkt no ano
+1220143,Luca Meirelles,2025-08-28,2024.0,Santos,Shakhtar D.,12000000.0,1500000.0,18.455852156057496,2b nao registrado no BRA1 pelo Transfermarkt no ano
+671145,João Victor,2025-08-20,2024.0,Vasco da Gama,CSKA Moscow,4500000.0,5000000.0,27.093771389459274,3a nome ambiguo no Transfermarkt
+1219849,Lucas Ferreira,2025-08-16,2024.0,São Paulo,Shakhtar D.,12000000.0,5000000.0,19.301848049281315,2b nao registrado no BRA1 pelo Transfermarkt no ano
+1082832,Ryan Carlos,2025-08-13,2024.0,EC Bahia,Estrela Amadora,400000.0,400000.0,23.249828884325805,4 nome sem correspondencia no Cartola
+843397,Rubens,2025-07-31,2024.0,Atlético-MG,Dynamo Moscow,9000000.0,6000000.0,24.109514031485283,3a nome ambiguo no Transfermarkt
+633377,Kaique Rocha,2025-07-28,2024.0,Internacional,Casa Pia,250000.0,3000000.0,24.410677618069816,0 avaliada
+964580,Wesley,2025-07-28,2024.0,Flamengo,Roma,25000000.0,20000000.0,21.89185489390828,3a nome ambiguo no Transfermarkt
+588989,Jhon Arias,2025-07-24,2024.0,Fluminense,Wolves,17000000.0,17000000.0,27.838466803559207,4 nome sem correspondencia no Cartola
+735573,Richard Ríos,2025-07-22,2024.0,Palmeiras,Benfica,27000000.0,16000000.0,25.136208076659823,0 avaliada
+576028,Thiago Almada,2025-07-17,2024.0,Botafogo,Atlético,21000000.0,25000000.0,24.22450376454483,4 nome sem correspondencia no Cartola
+1056993,Estêvão,2025-07-14,2024.0,Palmeiras,Chelsea,45000000.0,60000000.0,18.223134839151268,0 avaliada
+815384,Matheus Dias,2025-07-11,2024.0,Internacional,Nacional,1000000.0,1500000.0,23.173169062286107,4 nome sem correspondencia no Cartola
+984096,Jair Cunha,2025-07-11,2024.0,Botafogo,Nott'm Forest,12000000.0,13000000.0,20.344969199178646,4 nome sem correspondencia no Cartola
+1127813,Matheus Alves,2025-07-10,2024.0,São Paulo,CSKA Moscow,5100000.0,3500000.0,20.347707049965777,2b nao registrado no BRA1 pelo Transfermarkt no ano
+699679,Bernardo Schappo,2025-07-09,2024.0,Fortaleza,Estrela Amadora,200000.0,750000.0,26.299794661190965,2b nao registrado no BRA1 pelo Transfermarkt no ano
+574758,Garcia,2025-07-06,2024.0,Palmeiras,Famalicão,2000000.0,3000000.0,23.50171115674196,4 nome sem correspondencia no Cartola
+432164,Igor Jesus,2025-07-05,2024.0,Botafogo,Nott'm Forest,19000000.0,15000000.0,24.355920602327174,3a nome ambiguo no Transfermarkt
+341705,Gerson,2025-07-04,2024.0,Flamengo,Zenit S-Pb,25000000.0,25000000.0,28.123203285420946,0 avaliada
+584083,Bruninho,2025-07-01,2024.0,Atlético-MG,Karpaty Lviv,800000.0,1200000.0,25.177275838466805,3a nome ambiguo no Transfermarkt
+656409,Léo Realpe,2025-07-01,2024.0,RB Bragantino,Famalicão,3000000.0,1500000.0,24.34223134839151,4 nome sem correspondencia no Cartola
+733579,Clayton,2025-07-01,2024.0,Vasco da Gama,Rio Ave,3000000.0,5000000.0,26.469541409993155,3a nome ambiguo no Transfermarkt
+748319,Carlos Alcaraz,2025-07-01,2024.0,Flamengo,Everton,15000000.0,14000000.0,22.584531143052704,4 nome sem correspondencia no Cartola
+830365,Alisson Santos,2025-07-01,2024.0,EC Vitória,Sporting,2100000.0,1500000.0,22.759753593429156,2b nao registrado no BRA1 pelo Transfermarkt no ano
+868101,Sorriso,2025-07-01,2024.0,RB Bragantino,Famalicão,1500000.0,5000000.0,24.35044490075291,2b nao registrado no BRA1 pelo Transfermarkt no ano
+976561,Janderson,2025-07-01,2024.0,EC Vitória,Göztepe,1500000.0,1200000.0,26.154688569472963,3b colisao no pareamento
+1090422,Jean Pedroso,2025-07-01,2024.0,Coritiba FC,Karpaty Lviv,900000.0,900000.0,21.423682409308693,4 nome sem correspondencia no Cartola
+1083070,Alisson,2025-03-10,2024.0,Atlético-MG,Shakhtar D.,14000000.0,4500000.0,19.46611909650924,3a nome ambiguo no Transfermarkt
+371996,Alerrandro,2025-02-17,2024.0,RB Bragantino,CSKA Moscow,4200000.0,4000000.0,25.100616016427104,0 avaliada
+1119009,Kauã Elias,2025-02-08,2024.0,Fluminense,Shakhtar D.,17000000.0,9000000.0,18.869267624914443,0 avaliada
+875328,Biel,2025-02-03,2024.0,EC Bahia,Sporting,6430000.0,5000000.0,23.84394250513347,0 avaliada
+1004725,William Gomes,2025-01-31,2024.0,São Paulo,Porto,9000000.0,6000000.0,18.882956878850102,0 avaliada
+957874,Rômulo,2025-01-24,2024.0,Athletico-PR,Göztepe,5300000.0,3700000.0,22.9596167008898,2b nao registrado no BRA1 pelo Transfermarkt no ano
+743599,Emersonn,2025-01-22,2024.0,Athletico-PR,Göztepe,1780000.0,600000.0,20.520191649555098,0 avaliada
+1005575,Vitor Reis,2025-01-21,2024.0,Palmeiras,Man City,37000000.0,14000000.0,19.025325119780973,0 avaliada
+800175,Luiz Henrique,2025-01-20,2024.0,Botafogo,Zenit S-Pb,33000000.0,22000000.0,24.04928131416838,0 avaliada
+1084714,Robert,2025-01-20,2024.0,Cruzeiro,Copenhagen,2000000.0,1500000.0,19.772758384668034,4 nome sem correspondencia no Cartola
+766258,Kaio César,2025-01-01,2024.0,Coritiba FC,Vit. Guimarães,4200000.0,3000000.0,20.878850102669404,2b nao registrado no BRA1 pelo Transfermarkt no ano
+401534,Arthur Gomes,2024-09-07,2023.0,Cruzeiro,Dynamo Moscow,5000000.0,3000000.0,26.182067077344286,0 avaliada
+978037,Igor Jesus,2024-09-02,2023.0,Flamengo,Estrela Amadora,2000000.0,3000000.0,21.492128678986994,0 avaliada
+800176,André,2024-08-30,2023.0,Fluminense,Wolves,22000000.0,25000000.0,23.123887748117728,3b colisao no pareamento
+662332,Juan,2024-08-15,2023.0,São Paulo,Southampton,900000.0,800000.0,22.442162902121833,0 avaliada
+870390,César Augusto,2024-08-12,2023.0,Ceará SC,Nacional,80000.0,50000.0,20.971937029431896,2b nao registrado no BRA1 pelo Transfermarkt no ano
+1053933,Ruan,2024-08-02,2023.0,Juventude,Portimonense,325000.0,550000.0,19.249828884325805,0 avaliada
+971570,Endrick,2024-07-21,2023.0,Palmeiras,Real Madrid,47500000.0,60000000.0,18.001368925393567,0 avaliada
+546212,Diego Costa,2024-07-17,2023.0,São Paulo,Krasnodar,7500000.0,3500000.0,24.99110198494182,3b colisao no pareamento
+927768,Lucas Pires,2024-07-16,2023.0,Santos,Burnley,2300000.0,2000000.0,23.312799452429843,4 nome sem correspondencia no Cartola
+796574,Stênio,2024-07-10,2023.0,Cruzeiro,Karpaty Lviv,200000.0,900000.0,21.26488706365503,0 avaliada
+641458,Carlos Miguel,2024-07-09,2023.0,Corinthians,Nott'm Forest,4000000.0,4000000.0,25.749486652977414,2a menos de 3 jogos no Cartola
+713787,Jhoanner Chávez,2024-07-01,2023.0,EC Bahia,Lens,4500000.0,2000000.0,22.184804928131417,4 nome sem correspondencia no Cartola
+851595,Jefté,2024-07-01,2023.0,Fluminense,Rangers,800000.0,800000.0,20.528405201916495,2b nao registrado no BRA1 pelo Transfermarkt no ano
+919262,André Luiz,2024-07-01,2023.0,Flamengo,Estrela Amadora,600000.0,600000.0,22.351813826146476,2a menos de 3 jogos no Cartola
+991800,Luís Guilherme,2024-07-01,2023.0,Palmeiras,West Ham,23000000.0,24000000.0,18.390143737166323,0 avaliada
+1193867,Pedro Lima,2024-07-01,2023.0,Sport Recife,Wolves,10000000.0,2500000.0,18.001368925393567,2b nao registrado no BRA1 pelo Transfermarkt no ano
+381724,Victor Sá,2024-02-22,2023.0,Botafogo,Krasnodar,1500000.0,1800000.0,29.908281998631075,0 avaliada
+1004741,Pedro,2024-02-05,2023.0,Corinthians,Zenit S-Pb,9000000.0,7000000.0,17.998631074606433,3a nome ambiguo no Transfermarkt
+627222,Talles Costa,2024-02-04,2023.0,São Paulo,Polissya,1000000.0,2000000.0,21.508555783709788,0 avaliada
+668235,Marlon Gomes,2024-01-26,2023.0,Vasco da Gama,Shakhtar D.,12000000.0,6000000.0,20.11772758384668,0 avaliada
+1086636,Gabriel Moscardo,2024-01-25,2023.0,Corinthians,PSG,20000000.0,15000000.0,18.324435318275153,0 avaliada
+900195,Kevin,2024-01-19,2023.0,Palmeiras,Shakhtar D.,14800000.0,4000000.0,21.0403832991102,0 avaliada
+440658,Artur,2024-01-08,2023.0,Palmeiras,Zenit S-Pb,15000000.0,10000000.0,25.894592744695416,0 avaliada
+834899,Felipe Augusto,2024-01-06,2023.0,Corinthians,Cercle Brugge,3000000.0,3000000.0,19.88227241615332,0 avaliada
+352041,Lucas Perri,2024-01-05,2023.0,Botafogo,Lyon,6500000.0,8000000.0,26.069815195071868,0 avaliada
+373433,Adryelson,2024-01-05,2023.0,Botafogo,Lyon,3580000.0,8000000.0,25.78781656399726,0 avaliada
+520454,Nino,2024-01-04,2023.0,Fluminense,Zenit S-Pb,5000000.0,11000000.0,26.73511293634497,0 avaliada
+668267,Marcos Leonardo,2024-01-04,2023.0,Santos,Benfica,22000000.0,25000000.0,20.67624914442163,0 avaliada
+689505,Johnny Cardoso,2024-01-01,2023.0,Internacional,Real Betis,6000000.0,6000000.0,22.28062970568104,4 nome sem correspondencia no Cartola
+872171,Lucas Beraldo,2024-01-01,2023.0,São Paulo,PSG,20000000.0,15000000.0,20.10403832991102,0 avaliada
+943837,Vitor Roque,2024-01-01,2023.0,Athletico-PR,Barcelona,30000000.0,40000000.0,18.83915126625599,0 avaliada
+703497,Bitello,2023-09-14,2022.0,Grêmio,Dynamo Moscow,10000000.0,7000000.0,23.685147159479808,4 nome sem correspondencia no Cartola
+653348,Khellven,2023-09-01,2022.0,Athletico-PR,CSKA Moscow,4500000.0,7000000.0,22.51334702258727,0 avaliada
+1005649,Murillo,2023-08-31,2022.0,Corinthians,Nott'm Forest,12000000.0,3500000.0,21.15811088295688,2b nao registrado no BRA1 pelo Transfermarkt no ano
+742073,Wallisson,2023-08-30,2022.0,Cruzeiro,Moreirense,350000.0,800000.0,25.932922655715263,2b nao registrado no BRA1 pelo Transfermarkt no ano
+1082850,Deivid Washington,2023-08-24,2022.0,Santos,Chelsea,16000000.0,4000000.0,18.217659137577,2b nao registrado no BRA1 pelo Transfermarkt no ano
+868891,Adson,2023-08-23,2022.0,Corinthians,FC Nantes,5000000.0,6000000.0,22.87748117727584,0 avaliada
+735568,Natan,2023-08-07,2022.0,RB Bragantino,Napoli,9500000.0,5500000.0,22.496919917864478,0 avaliada
+743597,Matheus França,2023-08-05,2022.0,Flamengo,Crystal Palace,20000000.0,9000000.0,19.342915811088297,0 avaliada
+627224,Gabriel Silva,2023-08-01,2022.0,Palmeiras,Santa Clara,1500000.0,2500000.0,21.360711841204655,2b nao registrado no BRA1 pelo Transfermarkt no ano
+1033963,Eguinaldo,2023-07-31,2022.0,Vasco da Gama,Shakhtar D.,3500000.0,900000.0,18.973305954825463,4 nome sem correspondencia no Cartola
+102740,Mário Fernandes,2023-07-17,2022.0,Internacional,Zenit S-Pb,365000.0,3000000.0,32.824093086926766,2b nao registrado no BRA1 pelo Transfermarkt no ano
+743598,Ângelo,2023-07-16,2022.0,Santos,Chelsea,15000000.0,13000000.0,18.56536618754278,0 avaliada
+286772,Vinícius,2023-07-06,2022.0,Palmeiras,Portimonense,1500000.0,400000.0,29.27310061601643,0 avaliada
+208681,Gustavo Henrique,2023-07-01,2022.0,Flamengo,Fenerbahçe,1400000.0,1800000.0,30.269678302532512,4 nome sem correspondencia no Cartola
+368468,Moisés,2023-07-01,2022.0,Internacional,CSKA Moscow,2300000.0,5000000.0,28.306639288158795,3a nome ambiguo no Transfermarkt
+814269,Gustavo Mantuan,2023-07-01,2022.0,Corinthians,Zenit S-Pb,2000000.0,3000000.0,22.028747433264886,4 nome sem correspondencia no Cartola
+818495,Otávio,2023-07-01,2022.0,Flamengo,Famalicão,500000.0,600000.0,21.193702943189596,2b nao registrado no BRA1 pelo Transfermarkt no ano
+884072,Jeffinho,2023-01-31,2022.0,Botafogo,Olympique Lyon,10000000.0,1500000.0,23.08829568788501,0 avaliada
+735570,João Gomes,2023-01-30,2022.0,Flamengo,Wolves,18700000.0,15000000.0,21.963039014373717,0 avaliada
+663578,Ramon,2023-01-21,2022.0,Flamengo,Olympiacos,1500000.0,2500000.0,21.859000684462696,0 avaliada
+698742,Busanello,2023-01-19,2022.0,Chapecoense,Malmö,350000.0,1500000.0,24.22450376454483,2b nao registrado no BRA1 pelo Transfermarkt no ano
+808509,Danilo,2023-01-16,2022.0,Palmeiras,Nott'm Forest,20000000.0,25000000.0,21.71663244353183,0 avaliada
+646402,Abner,2023-01-15,2022.0,Athletico-PR,Real Betis,7000000.0,8000000.0,22.636550308008214,4 nome sem correspondencia no Cartola
+668228,Matheus Martins,2023-01-02,2022.0,Fluminense,Udinese,6000000.0,7000000.0,19.46611909650924,0 avaliada
+707447,Emiliano Martínez,2023-01-01,2022.0,RB Bragantino,Midtjylland,5000000.0,3500000.0,23.37577002053388,4 nome sem correspondencia no Cartola
+743600,Andrey Santos,2023-01-01,2022.0,Vasco da Gama,Chelsea,12500000.0,10000000.0,18.663928815879533,4 nome sem correspondencia no Cartola

@@ -1,0 +1,7 @@
+recorte,tolerancia_empate_log,n,D1_melhor,empate,persistencia_melhor,D1_melhor_pct
+todas,0.0,882,392,0,490,44.44444444444444
+todas,0.001,882,390,4,488,44.21768707482993
+valor revisado (|delta| > limiar),0.0,518,392,0,126,75.67567567567568
+valor revisado (|delta| > limiar),0.001,518,390,3,125,75.2895752895753
+valor nao revisado,0.0,364,0,0,364,0.0
+valor nao revisado,0.001,364,0,1,363,0.0

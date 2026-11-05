@@ -1,0 +1,69 @@
+config,ano_teste,anos_treino,n_treino,jogadores_treino,n_teste,jogadores_teste,intersecao_ids_treino_teste,ids_excluidos_extra,selecao,params,score_interno
+nivel_media,2022,"2020,2021",116,90,184,184,0,0,sem hiperparametros,{},
+nivel_media,2023,"2020,2021,2022",248,162,188,188,0,0,sem hiperparametros,{},
+nivel_media,2024,"2020,2021,2022,2023",309,195,224,224,0,0,sem hiperparametros,{},
+nivel_media,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,sem hiperparametros,{},
+nivel_ridge,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 316.2277660168379}",-1.3827406824854018
+nivel_ridge,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-1.0570122524032974
+nivel_ridge,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-1.047749562253512
+nivel_ridge,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.9594833883907031
+nivel_rf,2022,"2020,2021",116,90,184,184,0,0,busca aleatoria (1 particao(oes) interna(s)),"{""modelo__n_estimators"": 200.0, ""modelo__min_samples_leaf"": 10.0, ""modelo__max_features"": 1.0, ""modelo__max_depth"": 6.0}",-1.2913735472628152
+nivel_rf,2023,"2020,2021,2022",248,162,188,188,0,0,busca aleatoria (2 particao(oes) interna(s)),"{""modelo__n_estimators"": 800.0, ""modelo__min_samples_leaf"": 5.0, ""modelo__max_features"": 0.5, ""modelo__max_depth"": 6.0}",-1.210051898718357
+nivel_rf,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca aleatoria (3 particao(oes) interna(s)),"{""modelo__n_estimators"": 200.0, ""modelo__min_samples_leaf"": 2.0, ""modelo__max_features"": 1.0, ""modelo__max_depth"": null}",-1.0464480501338371
+nivel_rf,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca aleatoria (4 particao(oes) interna(s)),"{""modelo__n_estimators"": 200.0, ""modelo__min_samples_leaf"": 5.0, ""modelo__max_features"": 0.5, ""modelo__max_depth"": null}",-1.073525708090644
+nivel_xgb,2022,"2020,2021",116,90,184,184,0,0,busca aleatoria (1 particao(oes) interna(s)),"{""modelo__subsample"": 0.7, ""modelo__reg_lambda"": 10.0, ""modelo__n_estimators"": 300.0, ""modelo__max_depth"": 9.0, ""modelo__learning_rate"": 0.01, ""modelo__colsample_bytree"": 0.85}",-1.376220249324313
+nivel_xgb,2023,"2020,2021,2022",248,162,188,188,0,0,busca aleatoria (2 particao(oes) interna(s)),"{""modelo__subsample"": 0.7, ""modelo__reg_lambda"": 10.0, ""modelo__n_estimators"": 300.0, ""modelo__max_depth"": 9.0, ""modelo__learning_rate"": 0.01, ""modelo__colsample_bytree"": 0.85}",-1.2662512582875427
+nivel_xgb,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca aleatoria (3 particao(oes) interna(s)),"{""modelo__subsample"": 0.7, ""modelo__reg_lambda"": 1.0, ""modelo__n_estimators"": 300.0, ""modelo__max_depth"": 5.0, ""modelo__learning_rate"": 0.01, ""modelo__colsample_bytree"": 0.7}",-1.1053722786260762
+nivel_xgb,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca aleatoria (4 particao(oes) interna(s)),"{""modelo__subsample"": 0.7, ""modelo__reg_lambda"": 1.0, ""modelo__n_estimators"": 300.0, ""modelo__max_depth"": 5.0, ""modelo__learning_rate"": 0.01, ""modelo__colsample_bytree"": 0.7}",-1.1303007708569295
+nivel_ridge_M2,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 316.2277660168379}",-1.3666544155953906
+nivel_ridge_M2,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 10.0}",-0.971278676468571
+nivel_ridge_M2,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.9707442136045108
+nivel_ridge_M2,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.8977428892100309
+nivel_ridge_M3,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-1.2286271660444854
+nivel_ridge_M3,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 1.0}",-0.8880013903159547
+nivel_ridge_M3,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 1.7782794100389228}",-0.9276970524835447
+nivel_ridge_M3,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 5.62341325190349}",-0.9264616290586416
+var_D1,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.0306331397905036
+var_D1,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.056504561684097454
+var_D1,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.057520594123694736
+var_D1,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.06900246565775801
+var_D1b,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.030087248900856366
+var_D1b,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 56.23413251903491}",-0.058370700277846986
+var_D1b,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 100.0}",-0.05906229454515216
+var_D1b,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 56.23413251903491}",-0.07062685994176282
+var_D2,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.03205105524247359
+var_D2,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.05633732601699132
+var_D2,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.057453026236896666
+var_D2,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.06918684513822376
+var_D3,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.03205105524247359
+var_D3,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.05562513324832216
+var_D3,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.056511767542152945
+var_D3,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.06960629182520742
+nivel_D0,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 1.0}",-0.06680923084213362
+nivel_D0,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 1.7782794100389228}",-0.06721368293080003
+nivel_D0,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 3.1622776601683795}",-0.062171511312162496
+nivel_D0,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 1.7782794100389228}",-0.07473826887288623
+var_D1_semTM,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 5.62341325190349}",-0.03097881049317135
+var_D1_semTM,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.055716608036563864
+var_D1_semTM,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.05668177272493635
+var_D1_semTM,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.06796019903157767
+var_D1_sem2020,2022,2021,51,51,184,184,0,0,regra padrao (sem particao interna valida),"{""modelo__alpha"": 1.0}",
+var_D1_sem2020,2023,"2021,2022",165,127,188,188,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 56.23413251903491}",-0.049193998089296406
+var_D1_sem2020,2024,"2021,2022,2023",236,169,224,224,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 56.23413251903491}",-0.05360307016914728
+var_D1_sem2020,2025,"2021,2022,2023,2024",309,205,286,286,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.06906446585145158
+nivel_ridge_sem2020,2022,2021,51,51,184,184,0,0,regra padrao (sem particao interna valida),"{""modelo__alpha"": 1.0}",
+nivel_ridge_sem2020,2023,"2021,2022",165,127,188,188,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-1.022562585404532
+nivel_ridge_sem2020,2024,"2021,2022,2023",236,169,224,224,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-1.0020279848635152
+nivel_ridge_sem2020,2025,"2021,2022,2023,2024",309,205,286,286,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.9440389123504648
+clf_revisao,2022,"2020,2021",116,90,184,184,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__C"": 0.01}",0.6262626262626263
+clf_revisao,2023,"2020,2021,2022",248,162,188,188,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__C"": 0.0031622776601683794}",0.5767478566684465
+clf_revisao,2024,"2020,2021,2022,2023",309,195,224,224,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__C"": 316.2277660168379}",0.5537489460893715
+clf_revisao,2025,"2020,2021,2022,2023,2024",381,227,286,286,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__C"": 0.001}",0.5224745355763862
+var_D1__semexport,2022,"2020,2021",111,86,184,184,0,50,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.02168586975272127
+var_D1__semexport,2023,"2020,2021,2022",218,145,188,188,0,50,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.05396866337291066
+var_D1__semexport,2024,"2020,2021,2022,2023",269,171,224,224,0,50,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.05329890081540095
+var_D1__semexport,2025,"2020,2021,2022,2023,2024",335,200,286,286,0,50,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.06843527185381437
+var_D1__sem_incertos,2022,"2020,2021",107,82,179,179,0,0,busca grade (1 particao(oes) interna(s)),"{""modelo__alpha"": 10.0}",-0.029557662955247564
+var_D1__sem_incertos,2023,"2020,2021,2022",238,154,185,185,0,0,busca grade (2 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.057673664944491915
+var_D1__sem_incertos,2024,"2020,2021,2022,2023",296,186,220,220,0,0,busca grade (3 particao(oes) interna(s)),"{""modelo__alpha"": 31.622776601683793}",-0.048806580537722494
+var_D1__sem_incertos,2025,"2020,2021,2022,2023,2024",367,216,284,284,0,0,busca grade (4 particao(oes) interna(s)),"{""modelo__alpha"": 17.78279410038923}",-0.07106430564176511

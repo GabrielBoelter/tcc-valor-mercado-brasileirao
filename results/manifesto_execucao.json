@@ -1,0 +1,499 @@
+{
+ "versao_codigo": "v23.2-2026-11-05",
+ "anos": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "janela_dias": 182,
+ "corte": {
+  "2020": "2021-02-26",
+  "2021": "2021-12-31",
+  "2022": "2022-12-31",
+  "2023": "2023-12-31",
+  "2024": "2024-12-31",
+  "2025": "2025-12-31"
+ },
+ "hashes_csv": {
+  "players.csv": "b94216cf2ff8777b5eddd4fd91402c19e757b366fbdeb4f4437580c302ff2d66",
+  "player_valuations.csv": "9caf4ff707905f71463a04253c5ac640b3ff9575e07912fd7c50365697efa47d",
+  "transfers.csv": "5331311c6ec68c2c7a9c22979aff7d6f6fd2cefd96201d1bcfb35998a9d244ae",
+  "clubs.csv": "26dc6113d8206246145add2c7a318a657b3995fccdb0c9004d65ca6ae5e5968b",
+  "competitions.csv": "fadaf2992e01f8450d8d419006b0f533bbd6742163f4a0c5ee6a157fae7b791e"
+ },
+ "cartola_commit": "d3fd24db8ae73e3277d2f8b673068efece3decd4",
+ "arquivos_cartola": {
+  "2020": "data/01_raw/2020/rodada-38.csv",
+  "2021": "data/01_raw/2021/Mercado_39.txt",
+  "2022": "data/01_raw/2022/rodada-38.csv",
+  "2023": "data/01_raw/2023/rodada-38.csv",
+  "2024": "data/01_raw/2024/rodada-38.csv",
+  "2025": "data/01_raw/2025/rodada-38.csv"
+ },
+ "hashes_cartola": {
+  "2020": "2d78239fab9845ae979eaf66341025049b8f693afa5faaa21a1bcf23eb161b0a",
+  "2021": "0839e3eaba171b2cc850241085370ba8cfc811272c6ef731524a72e68bf805b0",
+  "2022": "f9958d7abe2b62e9f11440355a8e9b5adcde78c811c1ac2a79547ca14ca032ab",
+  "2023": "49d6758fd0157ca3ee900088c1be2d13604ae3543c1cd1b8133356ec92ab958e",
+  "2024": "d63932f3a36180da6df62bdb2e893e5899da0816de7cb94ccd0482eada9270fb",
+  "2025": "e6c92093a66fd57a22cc40386bafdf68500158d87d6f5c32f245e3e72a11e785"
+ },
+ "ambiente": {
+  "python": "3.13.16",
+  "numpy": "2.4.6",
+  "pandas": "2.2.3",
+  "sklearn": "1.6.1",
+  "scipy": "1.16.3",
+  "xgboost": "3.4.1",
+  "shap": "0.54.1",
+  "matplotlib": "3.10.0",
+  "pyarrow": "23.0.1",
+  "rapidfuzz": "3.14.6"
+ },
+ "execucao": "2026-11-05T11:57:23",
+ "configuracoes": {
+  "nivel_media": {
+   "alvo": "y",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "media",
+    "pontos",
+    "gols_p_jogo",
+    "assist_p_jogo",
+    "desarmes_p_jogo",
+    "finaliz_p_jogo",
+    "faltas_sof_p_jogo",
+    "cartoes_p_jogo",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "media",
+   "base": "nivel"
+  },
+  "nivel_ridge": {
+   "alvo": "y",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "media",
+    "pontos",
+    "gols_p_jogo",
+    "assist_p_jogo",
+    "desarmes_p_jogo",
+    "finaliz_p_jogo",
+    "faltas_sof_p_jogo",
+    "cartoes_p_jogo",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "nivel"
+  },
+  "nivel_rf": {
+   "alvo": "y",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "media",
+    "pontos",
+    "gols_p_jogo",
+    "assist_p_jogo",
+    "desarmes_p_jogo",
+    "finaliz_p_jogo",
+    "faltas_sof_p_jogo",
+    "cartoes_p_jogo",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "rf",
+   "base": "nivel"
+  },
+  "nivel_xgb": {
+   "alvo": "y",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "media",
+    "pontos",
+    "gols_p_jogo",
+    "assist_p_jogo",
+    "desarmes_p_jogo",
+    "finaliz_p_jogo",
+    "faltas_sof_p_jogo",
+    "cartoes_p_jogo",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "xgb",
+   "base": "nivel"
+  },
+  "nivel_ridge_M2": {
+   "alvo": "y",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "media",
+    "pontos",
+    "gols_p_jogo",
+    "assist_p_jogo",
+    "desarmes_p_jogo",
+    "finaliz_p_jogo",
+    "faltas_sof_p_jogo",
+    "cartoes_p_jogo",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC",
+    "preco"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "nivel"
+  },
+  "nivel_ridge_M3": {
+   "alvo": "y",
+   "num": [
+    "idade_no_corte",
+    "preco"
+   ],
+   "cat": [],
+   "est": "ridge",
+   "base": "nivel"
+  },
+  "var_D1": {
+   "alvo": "delta",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "pontos",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "var"
+  },
+  "var_D1b": {
+   "alvo": "delta",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "media",
+    "pontos",
+    "gols_p_jogo",
+    "assist_p_jogo",
+    "desarmes_p_jogo",
+    "finaliz_p_jogo",
+    "faltas_sof_p_jogo",
+    "cartoes_p_jogo",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "var"
+  },
+  "var_D2": {
+   "alvo": "delta",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "pontos",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC",
+    "clube_mediana_log"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "var"
+  },
+  "var_D3": {
+   "alvo": "delta",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "pontos",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC",
+    "clube_mediana_log",
+    "media_ant",
+    "jogos_ant",
+    "gols_p_jogo_ant",
+    "assist_p_jogo_ant",
+    "tem_temp_ant"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "var"
+  },
+  "nivel_D0": {
+   "alvo": "y",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "pontos",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC",
+    "v_ant_log"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "var"
+  },
+  "var_D1_semTM": {
+   "alvo": "delta",
+   "num": [
+    "idade_no_corte",
+    "jogos",
+    "pontos",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao"
+   ],
+   "est": "ridge",
+   "base": "var"
+  },
+  "var_D1_sem2020": {
+   "alvo": "delta",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "pontos",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "var",
+   "excluir_anos": [
+    2020
+   ]
+  },
+  "nivel_ridge_sem2020": {
+   "alvo": "y",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "media",
+    "pontos",
+    "gols_p_jogo",
+    "assist_p_jogo",
+    "desarmes_p_jogo",
+    "finaliz_p_jogo",
+    "faltas_sof_p_jogo",
+    "cartoes_p_jogo",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "ridge",
+   "base": "nivel",
+   "excluir_anos": [
+    2020
+   ]
+  },
+  "clf_revisao": {
+   "alvo": "revisado",
+   "num": [
+    "idade_no_corte",
+    "height_in_cm",
+    "jogos",
+    "pontos",
+    "G",
+    "A",
+    "DS",
+    "FS",
+    "FC",
+    "v_ant_log",
+    "dias_desde_valor"
+   ],
+   "cat": [
+    "posicao",
+    "position",
+    "sub_position",
+    "foot"
+   ],
+   "est": "logit",
+   "base": "var"
+  }
+ },
+ "limiar_revisao": 0.01,
+ "bootstrap": {
+  "reamostras": 2000,
+  "unidade": "jogador"
+ },
+ "saidas": {
+  "ambiente.json": "282d4ef7dbb1bd40ffdb51ace92ee5612c9a393af7c5e70dc2bde4370e27c87a",
+  "amostra_revisao_humana_pareamento.csv": "300620855faa90de5cd9e3e66ad2e070c239b80b03e63dde8e0c70c0314d9453",
+  "auc_revisao.csv": "4d903d720f09e4e54405b167a6b57af7660dd46a89ea4f94d2f5562c13031f74",
+  "auditoria_pareamento.csv": "3eec3e358399d4e5cdb4451440db514bd211e000aa9d0950a4d9eaef1514fdc6",
+  "casos_individuais_2025.csv": "98bdfcf895a5ae5c5f44dfea3d302d9d1f5c70625a1c95f360785d51f007c186",
+  "coerencia_clube_valuations.csv": "33aeb205033cebeb6c73365b7b8346559d51cdd359246886e2faf91b2fcf6dfc",
+  "conformal_por_ano.csv": "0149f7a2c0e678a69a482d462443715d70afdd1baf38b58354b846c1364a3fb0",
+  "conformal_por_faixa_valor.csv": "e5a9ba9fd9792b2fc861028480a87ec304e05d1b230b6fbb026f126acccfe54e",
+  "conformal_por_grupo.csv": "f8fae16d6435b104e48c98e88c8f9ce5dc8fbde1dceb23a7d6ddf3ec95272a60",
+  "conformal_por_posicao.csv": "53d69e78c01dba5c93339966df81ec6a588d34b87abaae0def165cf61742cfd3",
+  "curvas_aprendizado.csv": "8eca203c752f89f06546fce4cdf3825d694a54dbb4d07199f1ff4b3189ddd1cc",
+  "disponibilidade_variaveis.csv": "4a3a7761c14cc0d6ecaa48cca14fc27f3cb645668fe789cd1d93a055389978d3",
+  "estratificacao_limiares_v1_v2.csv": "4b379cdbbb18e49b444f037b44c8d1aef356090cf856de9e36cde93b34037d5c",
+  "exportacoes_elegiveis.csv": "80c7ad90b2c55463f6a31ae3d6dae71df8cb645fd8ef38698d5623b86974b403",
+  "exportacoes_incluidas_excluidas.csv": "0934a6b5a45fbb7d91c8b39d4a18ddd98af8d38796f8a0e3c75fd3e63e4e11db",
+  "fig1_rmse_outliers.png": "281510287a611c8ef4057f9afabf54df14f646ba155410bc178c4ea20b15167a",
+  "fig2_treino_teste.png": "5ec459b5f4d7e72ece15660388f3d7d91a6283bd5188bb55758df7e4cf13dd25",
+  "fig3_curvas_aprendizado.png": "27d3d9266de51d826c80ba2e339345d0907ce76d3854a626898a97e4de80dd3a",
+  "fig4_shap.png": "100f5c7993f659ec4d8d4d36a973c4b71363746375832c61df33f6c292962ee6",
+  "fig5_treino_teste_literatura.png": "da8ac7488596924ed586ad9cd91564963d350bb0381c9303d20e5c16cb793d94",
+  "funil_exportacoes.csv": "830dd4ffbbf484778d5d20c2433d8c3571ce49cd1ab4c7d0c54fcc5494ff249d",
+  "ganho_D1_por_ano.csv": "5c4e849d56cfdcd51730774971ec858c48281a43c5b34ef3683c889d22e94783",
+  "pareamento_excluidos.csv": "25976a207b0d0eaf9a0debc98dad20e29a85846bec23b6395e991a25ed42eece",
+  "pareamento_por_temporada.csv": "595c9117224e8ddc5518717dde6d750681532ae4fb8e88f6ba23c0c2f838cf08",
+  "particoes_externas.csv": "49028fa2baf51cf2fc1265f54f54f4e83a53cb8b3db0924c539bc5e09b209100",
+  "particoes_internas.csv": "840c045de7d987809be159533dd514f5143bf0fdcd569a70812e1d37ed5543bd",
+  "predicoes_classificador_revisao.csv": "280ccbac7f8168180cd3691e4aa1f81a303efd27d3156c2d49c6b6f0831ec865",
+  "predicoes_externas.csv": "23fe0343297d645c507da7fb1fc1c93deec31da8a64748217bd335c8e91a1665",
+  "relatorio_exportacoes.csv": "97f4c1c35fdbdbb8d43bf69320594e74d306d9b300a29665bb32e412f34584ac",
+  "rmse_outliers.csv": "c3300a2510201cdcde45d830882cbc01381d6587599271dfc57ad0b9e8720288",
+  "selecao_incluidos_excluidos.csv": "e39fee0275c652e4a8669a0bd906dc8459dbb76cf2d4d17608783a7f9735cc4e",
+  "selecao_por_clube.csv": "ba7a14526be92c9d4b866bf137d269022271454390611cf7f4fd09de306a8467",
+  "selecao_por_posicao_situacao.csv": "a1e62989e130c4fc7571b32f5e983af8625a9ea7b044112a87b487d982ba91a0",
+  "selecao_por_temporada_situacao.csv": "3806a9b8a52bd1d6bbf5842d2b8b266d9b6cb4310e13580daf55a02db52e2e1f",
+  "sensibilidade_pares_incertos.csv": "5e229636a1dd67808b33ecd89064045368a0cd5b66d8844e317a3f192c48bf55",
+  "sentido_matriz_confusao_D1.csv": "dd6bbd8140f72629f7c783d2311d427ad5451fbced91006a58ba47d9c5eb995d",
+  "sentido_matriz_confusao_referencia.csv": "17bf36e293f495eebdf4ff24d96aa7a2ce232e79a022dd737b6f596a3dbcc1c6",
+  "sentido_revisao.csv": "e4d5539241ea7ff6dd7b308c05b95c96d0a294becab004bc84462e3ddd791954",
+  "shap_importancia.csv": "15300a087908ff7d63817410a970c6c9b5983902217db368265be18d42f3ab62",
+  "tab2_modelos_nivel.csv": "5feb011782fc7ea0d2686e1f4f181ddbfc19c53546ccd2ba6e260a7956b0bd86",
+  "tab3_tab5_painel_observacoes_comuns.csv": "d7276dc902a86bca950dc165fb36e7184c0a7a20699769a2dd85c48c43f010a5",
+  "tab4_por_revisao.csv": "f7476d6152b4ef822ef30aaa4728c5b18db37ac37547139459c7e874eb087573",
+  "tab6_treino_teste_por_particao.csv": "02eec4af40d737c6b18ce153b95edef401340532c6024abf0c9bc6d7cdb1637d",
+  "tab7_estratificacao_faixa_valor.csv": "479e620a72136adace52fb8ca3b53e959300c0de0a760f191c9350c9520359da",
+  "tab7_estratificacao_grupo.csv": "f6da519c33cb2549bf5714ab91988e0846993c656c03f5300e8c053e4af93e5f",
+  "tab7_estratificacao_posicao.csv": "9f802136ac866bf7d659ccb58f018a13d4b9be98a30615808979ff033d8dda9c",
+  "tab8_exportacoes.csv": "43ccff8be8991d47906fd430a20f68da2faf4af73136de80a70d3015795ad16e",
+  "tab9_metricas_para_comparacao.csv": "4bc52cc7030d0427e820279ce3804f6aac30d0331f984269cbba7d4fc312ebb0",
+  "tabela_cobertura.csv": "32be7bea6098ca70402e962e351af0e452c9001efdb655b5e6e2af41f0281a14",
+  "tabela_cobertura_por_temporada.csv": "a46a87f94c303ddd448700beabed7eff432b7893b159ca59e8f0bab5d5e1720b",
+  "verificacao_temporal_por_temporada.csv": "fcc6786f8b0325766b3ab0fc5dd15065812465bac53f758020ca57c4e97e1283",
+  "verificacao_temporal_violacoes.csv": "1d1c558bdc1b83ac053b6579a8f64b58a3703605e50ef76dc3ea258e223f5bca",
+  "vitorias_empates_derrotas.csv": "864af829afbd9725957fcdad0582f8c5e0e1b34c0db3196b8033105c89ead6e3"
+ }
+}

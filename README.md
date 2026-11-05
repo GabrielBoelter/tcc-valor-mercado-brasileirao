@@ -7,80 +7,98 @@ confiabilidade o valor de mercado de jogadores do Campeonato Brasileiro, e o que
 entre essas estimativas e as taxas efetivamente pagas revela sobre a precificação das
 transferências para a Europa?
 
+Versão **v23.2** (05/11/2026), que responde à revisão do orientador de 03/11/2026 (itens 01 a 15).
+Ambiente de referência: Google Colab, Python 3.13.18 (versões em `requirements.txt`; o notebook avisa se o ambiente for diferente).
+
 ## Como reproduzir
 
-1. Abra `notebooks/pipeline_valor_mercado_brasileirao.ipynb` no Google Colab.
-2. Coloque os arquivos do Transfermarkt na pasta definida em `DADOS` (ver `data/README.md`).
-3. Execute as células em ordem. Os dados do Cartola FC são baixados automaticamente, e os
-   resultados intermediários são salvos em checkpoints validados (pasta `CKPT`).
+1. Obtenha os cinco CSVs do Transfermarkt e confira os hashes SHA-256 em `data/README.md`.
+2. **Colab:** coloque os CSVs em `/content/drive/MyDrive/TCC` e execute o notebook do início.
+   **Local:** defina `TCC_DADOS` (pasta dos CSVs), `TCC_CKPT` (pasta de checkpoints) e, se já
+   tiver um clone, `TCC_CARTOLA`; instale `requirements.txt`.
+3. O repositório do Cartola é baixado no commit fixo `d3fd24db8ae73e3277d2f8b673068efece3decd4`.
+4. Cada checkpoint tem um manifesto (versão do código, cortes, hashes dos dados e do Cartola);
+   se não coincidir com a execução atual, o checkpoint é descartado e recalculado. A pasta `saidas`
+   é limpa no início de cada execução e sempre regenerada.
 
-A semente aleatória é fixa (`RANDOM_STATE = 42`). O notebook está salvo **com as saídas** da
-execução de referência, para que os resultados possam ser lidos sem reexecutar.
+O notebook está salvo **com as saídas** da execução de referência, feita do zero em ambiente
+limpo. Todas as saídas tabulares estão em `results/`, incluindo `predicoes_externas.csv`
+(todas as predições de teste por configuração, jogador e temporada), a partir das quais as
+tabelas do artigo podem ser regeneradas sem retreinar. O manifesto da execução está em
+`results/manifesto_execucao.json`.
 
 ## Desenho
 
-| Etapa | Seção do notebook | O que faz |
+| Etapa | Seção | O que faz |
 |---|---|---|
-| Base de desempenho | 1 | lê o último arquivo de cada temporada do Cartola FC (2020–2025) |
-| Pareamento | 2 | casa Cartola e Transfermarkt por nome e apelido, restrito aos jogadores do Brasileirão no ano; descarta nomes ambíguos e colisões |
-| Alvo | 3 | primeiro valor de mercado após 31/12, em até 182 dias, ainda em clube do Brasileirão; auditoria de ordem temporal |
-| Modelos de nível | 4 | média, Ridge, Random Forest e XGBoost estimam o valor sem o valor anterior |
-| Modelo por variação | 4B | Ridge prevê a variação do log do valor a partir do último valor publicado; referência: persistência |
-| RMSE e outliers | 4C | painel completo de métricas e RMSE com e sem os jogadores de maior valor |
-| Exportações | 5 | aplica o modelo às vendas Brasileirão → Europa e compara com as taxas pagas |
-| Estratificação | 6 | erro por trajetória de carreira, posição e faixa de valor |
-| Interpretação | 7 | valores SHAP, global e por posição |
-| Incerteza | 8 | predição conforme (*split conformal*), 90% |
-| Casos individuais | 9 | o modelo aplicado a jogadores reais, selecionados por regra fixa |
+| Ambiente e manifesto | 0 | hashes dos dados, versões, regras de corte, validação de checkpoints |
+| Cartola | 1 | último arquivo de cada temporada (2020–2025), commit fixo |
+| Pareamento | 2 | nome e apelido, restrito aos jogadores do BRA1 no ano; ambíguos e colisões excluídos e registrados |
+| Corte, alvo e variáveis | 3 | corte = max(31/12, dia seguinte à última rodada); 2020 → 26/02/2021; verificação entrada ≤ corte < alvo |
+| Motor de modelagem | 4 | todas as configurações com as mesmas partições externas e internas, grade e critério; estimadores clonados |
+| Resultados | 4B | Tab. 2–5 a partir de uma única base de predições; bootstrap por jogador; ganho por ano; sentido da revisão; AUC |
+| Outliers / treino × teste | 4C, 4D | Tab. 6 e 9, Fig. 1, 2, 3 e 5 |
+| Exportações | 5 | temporada de referência pelo corte; modelos sem os atletas exportados; funil com causas |
+| Estratificação | 6 | trajetória (limiares v1 e v2), posição e faixa de valor |
+| SHAP | 7 | modelo principal de 2025 (Fig. 4) |
+| Predição conforme | 8 | ajuste < T−1, calibração T−1, teste T, para T = 2022–2025; D1 e persistência |
+| Auditorias | 10 | pareamento (clube nas duas fontes), sensibilidade sem pares incertos, seleção |
+| Manifesto | 11 | grava o manifesto da execução |
 
-**Validação:** partições por temporada (treino nos anos anteriores, teste no seguinte; testes
-de 2022 a 2025, 882 observações), sem o mesmo jogador no treino e no teste. Todo o
-pré-processamento fica dentro de `Pipeline` do scikit-learn.
+**Validação externa:** treino nas temporadas anteriores, teste na seguinte (2022 a 2025; 882
+observações de 460 atletas), sem atletas do teste no treino. **Validação interna:** dentro do
+treino, cada temporada (exceto a primeira) valida um modelo treinado com as anteriores, sem
+atletas comuns; sem partição válida (mínimo de 30 observações), regra fixa.
 
 ## Amostra
 
 | Etapa | n |
 |---|---|
 | Jogadores-temporada no Cartola FC (3+ jogos) | 3.424 |
-| Pareados sem ambiguidade com o Transfermarkt | 1.425 |
-| Com valor-alvo válido (amostra de modelagem) | 1.195 (517 jogadores) |
-| Exportações Brasileirão → Europa avaliadas | 50 de 149 |
+| Pareados sem ambiguidade detectada | 1.425 |
+| Com valor-alvo válido (modelagem) | 1.185 (513 jogadores) |
+| Exportações Brasileirão → Europa avaliadas | 50 de 110 no período elegível (149 no total) |
 
 ## Principais resultados (882 observações de teste)
 
-| Estratégia | R² (log) | RMSE (€ mi) | RMSE (log) | MAE (€ mi) | MdAPE |
-|---|---|---|---|---|---|
-| Persistência (repetir o último valor) | 0,942 | 0,95 | 0,270 | 0,48 | 12,0% |
-| Nível – Ridge (só desempenho) | 0,347 | 3,87 | 0,907 | 2,19 | 54,4% |
-| Nível – Random Forest | 0,317 | 4,27 | 0,927 | 2,33 | 56,9% |
-| Nível – XGBoost | 0,263 | 4,45 | 0,964 | 2,42 | 56,4% |
-| **Variação D1 (modelo principal)** | **0,948** | **1,10** | **0,256** | **0,56** | **10,4%** |
+| Estratégia | R² (log) | RMSE log | RMSE (€ mi) | MAE (€ mi) | MdAPE | Ganho de MSE log (IC 95%) |
+|---|---|---|---|---|---|---|
+| Persistência | 0,942 | 0,270 | 0,95 | 0,48 | 12,0% | — |
+| Nível – Ridge | 0,322 | 0,924 | 3,93 | 2,24 | 54,8% | — |
+| **Variação D1** | **0,950** | **0,251** | **0,95** | **0,51** | **10,0%** | **13,5% (9,7 a 17,3)** |
 
-- **Sem o valor anterior**, o desempenho explica cerca de um terço da variação do valor.
-- **Com o valor anterior**, o modelo reduz em 10,1% o erro quadrático da persistência em escala
-  logarítmica (IC 95% por bootstrap por jogador: 6,2% a 13,9%; Diebold-Mariano p < 0,001) e
-  acerta o sentido da revisão do valor em 72,0% dos casos (referência: 61,0%).
-- **Em euros**, o RMSE do modelo é um pouco maior que o da persistência: poucos jogadores caros
-  concentram o erro (1% das observações responde por cerca de 45% do erro quadrático) e o
-  modelo exagera as valorizações dos jovens mais valiosos. Ver `figures/rmse_outliers.png`.
-- **Incerteza:** intervalo de 90% equivalente a multiplicar e dividir a estimativa por 1,67.
-- **Taxas reais:** a estimativa reproduz o nível mediano das taxas pagas (razão 1,03), mas não
-  fica mais próxima de cada taxa do que o valor anterior.
+- Ganho por ano de teste: 8,5% (2022), −0,3% (2023), 15,4% (2024), 17,8% (2025); sem 2020 no
+  treino, 8,8% (3,7 a 13,4).
+- O D1 erra menos que a persistência em 44,4% das observações; em euros, empata no RMSE e tem
+  MAE maior.
+- Entre os casos com revisão superior ao limiar (|Δ log| > 0,01), acerta o sentido em 76,8%,
+  contra 55,0% de uma regra aprendida no treino (diferença +21,8 p.p., IC 17,1 a 26,8).
+- Classificador de revisão: AUC 0,555 (0,519 a 0,592) — baixa capacidade discriminatória.
+- Intervalos de 90%: cobertura de 91,6% (84,4% a 96,8% entre os anos).
+- Exportações (modelos sem os exportados): taxa / estimativa = 1,08 (mediana).
+
+## Revisão do pareamento (05/11/2026)
+
+Amostra de 80 pares (40 aceitos e 40 incertos pela auditoria de clubes), revisada com fontes
+públicas (data de nascimento e histórico de clubes): `results/revisao_pareamento_amostra80.csv`.
+
+| Grupo | Corretos | Errados | Taxa de erro (IC 95%) |
+|---|---|---|---|
+| Aceitos (clube coincide) | 40 | 0 | 0% (0 a 8,8%) |
+| Incertos (clube diverge) | 9 | 31 | 77,5% (61,5% a 89,2%) |
+
+Os erros são homônimos que o Transfermarkt associa a clubes brasileiros pelo clube atual. A
+análise sem os 41 pares incertos mantém o ganho do D1 (12,2%, IC 8,2 a 16,5).
 
 ## Decisões metodológicas
 
-As decisões e os critérios de trajetória estão registrados em `docs/pre_registro_trajetorias.md`
-e no cabeçalho do notebook, que lista todas as correções feitas ao longo das versões.
+Ver `docs/registro_decisoes_metodologicas.md`. Os limiares de trajetória **não** foram
+pré-registrados de forma verificável; a versão 2 foi ajustada após exploração.
 
 ## Limitações
 
-O alvo é a estimativa coletiva do Transfermarkt, e não um preço de transação; o pareamento por
-nome deixa parte dos atletas de fora; a base de transferências não distingue empréstimos e
-registra a data de execução, não a do acordo; goleiros, atletas sem histórico e exportações
-formam grupos pequenos.
-
-## Referência principal
-
-MÜLLER, O.; SIMONS, A.; WEINMANN, M. Beyond crowd judgments: data-driven estimation of market
-value in association football. *European Journal of Operational Research*, v. 263, n. 2,
-p. 611-624, 2017.
+Alvo é a estimativa do Transfermarkt; pareamento nominal sem confirmação independente (41 pares
+com clube divergente marcados como incertos); seleção favorece atletas com mais jogos e de
+clubes do BRA1 no retrato de 2026; em parte dos registros antigos de `player_valuations`, o id
+do clube é o do clube atual; atributos cadastrais de 2026; a base de transferências não
+distingue empréstimos e registra a data de execução.

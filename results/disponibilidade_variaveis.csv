@@ -1,0 +1,8 @@
+variavel,origem da data,relacao com o corte,validade historica
+"estatisticas do Cartola (jogos, pontos, scouts)",fim da temporada (ultima rodada),<= corte,sim
+posicao do Cartola,fim da temporada,<= corte,sim
+idade no corte,data de nascimento (fixa),calculada no corte,sim
+valor anterior (v_ant),data do ultimo valor publicado,< corte,sim
+forca do clube,valores dos 12 meses antes do corte,< corte,sim
+temporada anterior,fim da temporada anterior,< corte,sim
+"position, sub_position, foot, height_in_cm (Transfermarkt)",cadastro extraido em 06/2026,posterior ao corte,nao demonstrada (ver sensibilidade sem esses atributos)
